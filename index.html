@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>IMB Dashboard</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/Chart.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		
+		<script>
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["Janar","Shkurt","Mars","Prill","Maj","Qershor","Korrik","Gusht","Shtator","Tetor","Nentor","Dhjetor"],
+			datasets : [
+				
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#f7f7f7",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("linechart").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData);
+	}
+
+	</script>
+	</head>
+	<body>
+	
+	<table>
+	
+		<tr class="rreshti1">
+			<td colspan="2" class="r1c1">
+			<h1>Hyrje & dalje</h1>
+			
+			<select>
+				<option value="shitjetDitore">Shitjet ditore</option>
+				<option value="arkaBanka">Arka & Banka</option>
+			</select>
+			
+			</td>
+			<td colspan="2" class="r1c2">
+			<h1>Shitjet vjetore</h1>
+			
+			<select>
+				<option value="shitjetDitore">Shitjet javore</option>
+				<option value="arkaBanka">Shitjet mujore</option>
+			</select>
+			
+			<canvas id="linechart"></canvas>
+			</td>
+		</tr>
+		
+		<tr class="rreshti2">
+			<td class="r2c1">
+			<h2>Si të filloni?</h2>
+			
+			<select>
+				<option value="konfigurime">Konfigurime</option>
+				<option value="inventari">Inventari</option>
+				<option value="raporte">Raporte</option>
+			</select>
+			
+			<p>Hapat e parë dhe çeljet fillestare ne program</p>
+			<ul>
+				<li><a href="#">Ndërmarrjet</a></li>
+				<li><a href="#">Rolet</a></li>
+				<li><a href="#">Përdoruesit</a></li>
+			</ul>
+			</td>
+			<td class="r2c2">
+			<h2>Konfigurime</h2>
+			
+			<select>
+				<option value="siTeFilloni">Si te filloni</option>
+				<option value="inventari">Inventari</option>
+				<option value="raporte">Raporte</option>
+			</select>
+			
+			<p>Konfigurimet kryesore të të dhënave</p>
+			<ul>
+				<li><a href="#">Strukturat e llogarive</a></li>
+				<li><a href="#">Llogaritë</a></li>
+				<li><a href="#">Taksat</a></li>
+				<li><a href="#">Vitet</a></li>
+			</ul>
+			</td>
+			<td class="r2c3">
+				<div class="pie1">
+					<canvas id="nerios"></canvas>
+					<h3>Arka & Banka</h3>
+					<p>Të dhënat e muajit të fundit</p>
+				</div>
+				
+				<div class="pie2">
+					<canvas id="nerios1"></canvas>
+					<h3>Magazina</h3>
+					<p>Te dhënat e muajit të fundit</p>
+				</div>
+				
+				<div class="pie3">	
+					<canvas id="nerios2"></canvas>
+					<h3>Prodhimi</h3>
+					<p>Te dhënat e muajit të fundit</p>
+				</div>
+					
+			</td>
+			<td class="r2c4">
+				<h2>Tokë e lirë</h2>
+				<select>
+					<option value="siTeFilloni">Si te filloni</option>
+					<option value="konfigurime">Konfigurime</option>
+					<option value="inventari">Inventari</option>
+					<option value="raporte">Raporte</option>
+				</select>
+				<p>Këtu do të vendoset diçka e menduar mirë!!!</p>
+			</td>
+		</tr>
+		
+		<tr class="rreshti3">
+			<td class="r3c1">
+			<h2>Inventari</h2>
+			
+			<select>
+				<option value="siTeFilloni">Si te filloni</option>
+				<option value="konfigurime">Konfigurime</option>
+				<option value="raporte">Raporte</option>
+			</select>
+			
+			<p>Regjistrimet e magazines dhe kostos</p>
+			<ul>
+				<li><a href="#">Magazinat</a></li>
+				<li><a href="#">Artikujt</a></li>
+				<li><a href="#">Artikujt afatgjatë</a></li>
+				<li><a href="#">Rivlerësimi i inventarit</a></li>
+			</ul>
+			</td>
+			<td class="r3c2">
+			<h2>Raporte</h2>
+			
+			<select>
+				<option value="siTeFilloni">Si te filloni</option>
+				<option value="konfigurime">Konfigurime</option>
+				<option value="inventari">Inventari</option>
+			</select>
+			
+			<p>Informacione të detajuara për ndërmarrjen</p>
+			<ul>
+				<li><a href="#">Ambjenti i kontabilizimit</a></li>
+				<li><a href="#">Raportimi</a></li>
+			</ul>
+			</td>
+			<td class="r3c3">
+				<div class="info">
+					<h4>Ndërmarrja:</h4>
+					<h4>Vendodhja:</h4>
+					<h4>Telefon:</h4>
+				</div>
+				
+				<div class="info1">
+					<h5>Univers Promotions</h5>
+					<h5>Rinas, Tiranë-Albania</h5>
+					<h5>+355 69 20 22 277</h5>
+				</div>
+				
+				<div class="info">
+					<h4>NIPT:</h4>
+					<h4>Viti:</h4>
+					<h4>Web Page:</h4>
+				</div>
+				
+				<div class="info1">
+					<h5>K81324039M</h5>
+					<h5>2015</h5>
+					<h5>adema@universpromotions.al</h5>
+				</div>
+				</td>
+			<td class="r3c4">
+				<h2 style="color: #fff;">VERSIONI I RI!</h2>
+				<p style="color: #fff;">Zbuloni të rejat e versionit më të fundit të AlphaWEB</p>
+				<a class="alphaLogo" href="#"></a>
+				<p style="color: #fff; text-align: right;">Powered by IMB</p>
+			</td>
+		</tr>
+		
+	</table>
+	
+	</body>
+</html>

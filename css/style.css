@@ -1,0 +1,316 @@
+body, div {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansSemibold;
+    src: url(fonts/OpenSans-Semibold.ttf);
+}
+
+table {
+	padding: 0;
+	margin: 0;
+	width: 1661px;
+	height: 859px;
+	border-spacing: 8px;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: OpenSansLight;
+	color: #777;
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	line-height: 22px;
+	font-family: OpenSansLight;
+	color: #777;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: OpenSansSemibold;
+	color: #777;
+	font-weight: normal;
+}
+
+h4 {
+	margin: 25px 0 0 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 17px;
+	font-family: OpenSansSemibold;
+	color: #66a2c0;
+	font-weight: normal;
+}
+
+h5 {
+	margin: 25px 0 0 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 17px;
+	font-family: OpenSansLight;
+	color: #959595;
+	font-weight: normal;
+}
+
+p {
+	margin: 7px 0 0 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 15px;
+	font-family: OpenSans;
+	color: #aaa;
+	font-weight: normal;
+}
+
+ul {
+	color: #97bbcd;
+	font-family: OpenSans;
+	font-size: 15px;
+	list-style: none;
+	padding: 0;
+	margin: 12px 0 0 0;
+}
+
+li {
+	line-height: 22px;
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #66a2c0;
+}
+
+a:hover {
+	color: #97bbcd;
+}
+
+select, h1, h2 {
+	display: inline;
+}
+
+select {
+	font-family: OpenSans;
+	float: right;
+	border: 1px solid #97bbcd;
+	border-radius: 3px;
+	color: #97bbcd;
+	padding: 2px 2px;
+	background: url("images/arrow.png") no-repeat center;
+    -webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	margin: -6px -6px 0 0;
+	display: none;
+	color: transparent;
+}
+
+select:hover {
+	background: url("images/arrowW.png") no-repeat center #97bbcd;
+}
+
+option {
+	color: #777;
+	background-color: #fff;
+	border: none;
+}
+
+
+
+td {
+	background-color: #f7f7f7;
+}
+
+td:hover {
+	background-color: #f4f4f4;
+}
+
+td:hover select {
+	display: block;
+}
+
+
+
+
+.rreshti1 {
+	height: 50%;
+	width: 100%;
+}
+
+.r1c1 {
+	width: 30%;
+	vertical-align: top;
+	padding: 20px;
+	background-image: url("images/bcg.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;	
+}
+
+.r1c2 {
+	width: 70%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+
+
+
+.rreshti2 {
+	height: 25%;
+	width: 100%;
+}
+
+.r2c1 {
+	width: 15%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.r2c2 {
+	width: 15%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.r2c3 {
+	width: 55%;
+}
+
+.r2c4 {
+	width: 15%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+
+
+.rreshti3 {
+	height: 25%;
+	width: 100%;
+}
+
+.r3c1 {
+	width: 15%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.r3c2 {
+	width: 15%;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.r3c3 {
+	width: 55%;
+	vertical-align: center;
+	border-spacing: 0;
+}
+
+.r3c4 {
+	width: 15%;
+	background-color: #4dc284;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.r3c4:hover {
+	background-color: #40bd7b;
+}
+
+
+#linechart {
+	height: 332px;
+	width: 100%;
+	margin: 15px 0 0 0;
+	position: relative;
+	bottom: 0px;
+}
+
+.pie1, .pie2, .pie3 {
+	height: 100px;
+	width: 33%;
+	display: inline-table;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#nerios, #nerios1, #nerios2 {
+	padding:0;
+	margin:0 0 10px 0;
+	height: 100px;
+}
+
+.info {
+	width: 13%;
+	text-align: right;
+	padding: 20px 4px 20px 20px;
+}
+
+.info1 {
+	width: 31%;
+	padding: 20px 20px 20px 0px;
+}
+
+
+
+.info, .info1 {
+	display: inline-table;
+	height: 100%;
+	margin: 0;
+}
+
+.alphaLogo {
+	margin: 23px 0 14px 0;
+	height: 48px;
+	width: 200px;
+	background-image: url(images/AlphaLogo.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.alphaLogo:hover {
+	margin: 22px 0 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
